@@ -1,0 +1,11 @@
+Error: write EPROTO 64081544:error:100000f7:SSL routines:OPENSSL_internal:WRONG_VERSION_NUMBER:../../../../src/third_party/boringssl/src/ssl/tls_record.cc:242:
+solution
+
+
+This type of issue comes when you use https instead of http. Change the URL to use http.
+
+Example: https://localhost:3000/posts
+
+Change it to: http://localhost:3000/posts
+
+_____________________________________________
